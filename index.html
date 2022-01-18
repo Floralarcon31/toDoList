@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+     <!-- FontAwesome  -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title> TO DO LIST - Lista de Tareas</title>
+</head>
+<body>
+    <h1>
+        LISTA DE TAREAS DIARIAS
+    </h1>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateLeft">
+                <div id="dateNumber"></div>
+                <div>
+                     <!--mes -->
+                    <div id="dateMonth"></div>
+                     <!--año -->
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+         <!--comienzo form -->
+        <form onsubmit="addNewTask(event)" >
+            <input type="text" name="taskText" autocomplete="off" placeholder="Añadir nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton"><i class="fas fa-plus"></i></button>
+            <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+        </form>
+        <!--fin form -->
+        <div id="tasksContainer"></div>
+    </div>
+   <footer class="footer">
+    &copy; FloresInc - 2022
+    <!-- dark mode
+         <label class="switch" id="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    -->
+   
+   </footer>
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

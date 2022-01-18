@@ -1,0 +1,201 @@
+
+/*ROBOTO - OSWALD*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: #e7e7e7;
+    text-transform:capitalize;
+    
+}
+
+/*BORDER*/
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: rgb(255, 140, 0);
+    background-color: rgb(253, 243, 230) ;
+
+}
+/*RESPONSIVE h1*/
+@media (max-width:576px){
+   h1{
+      font-size: 25px;
+    }
+  }
+/*RESPONSIVE h1*/
+.roundBorder{
+    border-radius: 5px;
+}
+
+.list{
+    margin: 25px auto;
+    padding: 25px;
+    background-color: rgb(253, 243, 230);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateLeft{
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber{
+    font-size: 50px;
+}
+
+#dateText{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+#dateMonth,
+#dateNumber,
+#dateText{
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear{
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form{
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input{
+    border: none;
+    padding-left: 10px;
+    background-color: bisque;
+}
+
+input:focus{
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton{
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: bisque;
+}
+
+.orderButton{
+   color: white;
+   background-color: rgb(214, 41, 41);
+   padding: 6px;
+}
+
+.task{
+    background-color: bisque;
+    padding: 15px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.done{
+    background-color: #e7e7e7;
+    text-decoration: line-through;
+    color: black;
+}
+/*DARK MODE*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/*FOOTER*/
+.footer {
+    background: rgb(253, 243, 230) ;
+    color: rgb(255, 140, 0);
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    height: 85px;
+    font-weight: bold;
+  }
+
